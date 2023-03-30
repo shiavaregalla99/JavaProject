@@ -1,0 +1,262 @@
+Java Conditional Statements
+
+Conditional Statements are used to insert verification points and error handling
+
+if Statement
+Syntax
+if(condition){
+//write any logic
+}
+
+public class ConditionalStatements {
+
+    public static void main(String[] args) {
+      boolean condition=true;
+      if(condition){
+          //true body
+      }
+    }
+}
+//program 1
+Types of condition (postive and negative condition)
+
+single Condition
+Postive Condition
+package Class3;
+
+public class ConditionalStatements {
+    //Program 1
+    public static void main(String[] args) {
+        int a=100;
+        int b=50;
+        if(a>b){  //it will check the condition if the given condition is true
+            //it will enters inside the { braces
+            //here
+            System.out.println("largest number");
+        }
+    }
+
+}
+
+Negative Condition
+
+package Class3;
+
+public class ConditionalStatements {
+    //Program 1
+    public static void main(String[] args) {
+        int a=100;
+        int b=50;
+        if(!(a>b)){  //! not symbol purpose of the if condition true it will it as false
+            //if the condition false it will make the condition as true
+            System.out.println("largest number");
+        }
+        System.out.println("condition got failed ");
+    }
+
+}
+
+Compound Condition
+
+And &
+Condition1    Condition2      Result
+True           True           True
+True           False          False
+False          True           False
+False          False          False
+
+
+ //Program 3
+    public static void main(String[] args) {
+        int a = 100;
+        int b = 50;
+        int c = 500;
+        if ((a > b) & (a < c)) {
+            System.out.println("c is bigger Number");
+        }
+    }
+}
+
+ //Program 4
+    public static void main(String[] args) {
+        int a = 100;
+        int b = 50;
+        int c = 500;
+        if ((a > b) & (a > c)) {
+            System.out.println("c is bigger Number");
+        }
+    }
+}
+
+OR ||
+
+OR &
+Condition1    Condition2      Result
+True           True           True
+True           False          True
+False          True           True
+False          False          False
+
+//Program 5
+    public static void main(String[] args) {
+        int a = 100;
+        int b = 50;
+        int c = 500;
+        if ((a > b) || (a > c)) {
+            System.out.println("c is bigger Number");
+        }
+    }
+}
+
+//if else condition
+
+  public static void main(String[] args) {
+        int enterage=9;
+        if(20<enterage){
+            System.out.println("eligible for voting");
+        }
+        else{
+            System.out.println("condition got failed so i came here");
+        }
+    }
+}
+
+valid statement
+
+ public static void main(String[] args) {
+        int age=20;
+        if(age==20){
+            System.out.println("eligible for voting");
+        }
+        else{
+            System.out.println("condition got failed so i came here");
+        }
+    }
+}
+
+invalid statement
+
+ public static void main(String[] args) {
+        int age=20;
+        if(age=20){
+           int age=200;
+            System.out.println("eligible for voting");
+        }
+        else{
+            System.out.println("condition got failed so i came here");
+        }
+    }
+}
+
+Decide among the several alternative we are going to use the if else
+
+  public static void main(String[] args) {
+       int a=-100;
+       if ((a >= 1) & (a <= 100)) {
+            System.out.println("A is small number");
+        }
+        else   if ((a >100) & (a <= 1000)){
+            System.out.println("A is medium  number");
+        }
+        else   if ((a >1000) & (a <= 10000)){
+            System.out.println("A is Big  number");
+        }
+        else if(a>100000){
+            System.out.println("A is gigantic number");
+        }
+        else{
+            System.out.println("A is invalid or negative number");
+        }
+    }
+}
+
+ public static void main(String[] args) {
+
+        //Decide among the several alternative we are going to use the switch statement
+            char grade='F';
+
+            switch(grade){
+                case 'A':
+                    System.out.println("Excellent");
+                    break;
+                case 'B':
+                    System.out.println("Well Done");
+                    break;
+                case 'C':
+                    System.out.println("Better");
+                    break;
+                case 'D':
+                    System.out.println("Average");
+                    break;
+                case 'F':
+                    System.out.println("Fail");
+                    break;
+                default:
+                    System.out.println("invalid grade ");
+            }
+    }
+}
+
+===========================================================
+
+package Class3;
+
+public class ConditionalStatements {
+
+    public static void main(String[] args) {
+
+         String browserName="chrome";
+
+            switch(browserName){
+                case "chrome":
+                    System.out.println("execution should happen in the chrome browser");
+                    break;
+                case "firefox":
+                    System.out.println("execution should happen in the firefox browser");
+                    break;
+                case "safari":
+                    System.out.println("execution should happen in the safari browser");
+                    break;
+                case "ie":
+                    System.out.println("execution should happen in the ie browser");
+                    break;
+
+                default:
+                    System.out.println("invalid browser selected by user ");
+            }
+    }
+}
+
+public class ConditionalStatements {
+//without break statement
+    public static void main(String[] args) {
+
+         String browserName="chrome";
+
+            switch(browserName){
+                case "chrome":
+                    System.out.println("execution should happen in the chrome browser");
+               //     break;
+                case "firefox":
+                    System.out.println("execution should happen in the firefox browser");
+                //    break;
+                case "safari":
+                    System.out.println("execution should happen in the safari browser");
+                  //  break;
+                case "ie":
+                    System.out.println("execution should happen in the ie browser");
+                   // break;
+
+                default:
+                    System.out.println("invalid browser selected by user ");
+            }
+    }
+}
+
+output:
+
+execution should happen in the chrome browser
+execution should happen in the firefox browser
+execution should happen in the safari browser
+execution should happen in the ie browser
+invalid browser selected by user

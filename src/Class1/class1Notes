@@ -1,0 +1,71 @@
+Why are we here?
+
+To be Automation Engineer.
+
+What do Automation Engineer do?
+
+They test Software but mainly you will be testing website an mobiles apps by writing a piece of software
+that will  test the website automatically
+
+Why are we learning the java?
+
+
+Java is a programming language that we will be using to communicate
+with the computer so that we can guidea computer on how to test website automatically.
+
+What is intelliji?
+
+intelliji is software that we will be using to write the java code just like use microsoft word to write english
+it has many features like it can find and fix issues in our code.it can suggest improvements.it can assist
+you to organize your cod and so many other things
+
+
+
+what is a project in intelliji
+
+A project is nothing but a folder that we create to organize our code just like we create folder on our
+computer to organize the files
+
+
+
+What is the package
+
+A package is nothing but another folder inside the project folder we create packages to organize the code
+
+what is the class?
+
+A class is a jav program where we will be writing your code inside the class we will be  creating
+main method for now we will write all of your code inside the main method
+
+What are the comments
+
+Comments are like notes that we write with java  code to explain how the code is working.
+this comments are ignored by java
+there are two ways we can write the comments
+
+Single line comments
+we are use the two forward slashes
+  //class ----> java keyword
+//java program execution will be going to start from the main method
+
+
+Multiple line comments
+/*a
+b
+        sfasd
+dfsad
+                afdsf
+asdfsad
+                        fsda
+
+fdsfasd */
+
+
+
+
+
+
+
+
+
+
