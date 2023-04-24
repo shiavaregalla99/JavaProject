@@ -1,0 +1,415 @@
+Java Flow Control
+
+Java Conditional Statements
+Java Loop Statements
+
+1)Java Conditional Statements
+
+Two types of conditional statements
+
+If Statement
+
+Switch Statement
+
+
+If Statements
+
+Single Conditon
+
+//postive conditon
+    public static void main(String[] args) {
+        int a=100;
+        int b=50;
+        if(a>b){ //if the given condition is true than only it enters into the loop
+            System.out.println("A is bigger Number");
+        }
+    }
+}
+
+
+public class ConditionalStatements {
+//negative  conditon
+    public static void main(String[] args) {
+        int a=100;
+        int b=500;
+        if(!(a>b)){ //if the given condition is true than only it enters into the loop
+            System.out.println("A is bigger Number");
+        }
+    }
+}
+
+
+Compound Condition
+
+and condition
+condition1   condition2   result
+true           true        true
+true           false       false
+false           true        false
+false           false       false
+
+
+or condition
+
+condition1   condition2   result
+true           true        true
+true           false       true
+false           true        true
+false           false       false
+
+//and  conditon
+    public static void main(String[] args) {
+        int a=100;
+        int b=50;
+        int c=500;
+        if((a>b)&(a<c)){ //if the given condition is true than only it enters into the loop
+            System.out.println("C is bigger Number");
+        }
+    }
+}
+
+
+//and  conditon
+    public static void main(String[] args) {
+        int a=1000;
+        int b=50;
+        int c=500;
+        if((a>b)&(a<c)){ //if the given condition is true than only it enters into the loop
+            System.out.println("C is bigger Number");
+        }
+    }
+}
+
+//or  conditon
+    public static void main(String[] args) {
+        int a=1000;
+        int b=50;
+        int c=500;
+        if((a>b)||(a<c)){ //if the given condition is true than only it enters into the loop
+            System.out.println("C is bigger Number");
+        }
+    }
+}
+
+//else  conditon
+    public static void main(String[] args) {
+        int a=10;
+        int b=50;
+        int c=500;
+        if((a>b)||(a>c)){ //if the given condition is true than only it enters into the loop
+            System.out.println("C is bigger Number");
+        }
+        else{
+            System.out.println("condition got failed so i came here");
+        }
+    }
+}
+
+//to decide among several alternatives else if
+    public static void main(String[] args) {
+      int a=-9999;
+
+      if((a>=1)&(a<=100)){
+          System.out.println("a is samll number");
+      }
+     else   if((a>100)&(a<=1000)){
+            System.out.println("a is medium number");
+        }
+      else   if((a>1000)&(a<=10000)){
+          System.out.println("a is big number");
+      }
+      else if(a>10000){
+          System.out.println(" a is gigantic number");
+      }
+      else{
+          System.out.println("a is either zero or negative nubmer");
+      }
+    }
+}
+
+
+======================================================================================
+
+public class ConditionalStatements {
+//to decide among several alternatives else if
+    public static void main(String[] args) {
+     String browserName="ies";
+         switch(browserName){
+
+             case "chrome":
+                 System.out.println("execute in chrome browser");
+                 break;
+             case "firefox":
+                 System.out.println("execute in firefox browser");
+                 break;
+             case "safari":
+                 System.out.println("execute in safari browser");
+                 break;
+             case "ie":
+                 System.out.println("execute in ie browser");
+                 break;
+             default:
+                 System.out.println("invalid browser is selected by user");
+         }
+
+    }
+}
+
+=====================================================================================================
+
+Loop Statements
+
+for
+
+while
+
+do while
+
+enchanced for loop
+
+for: if you know the number of iterations for loop is the best choice
+ public static void main(String[] args) {
+        //without using the for loop
+
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+    }
+}
+
+public static void main(String[] args) {
+        //by using the for loop
+        //number of times need to print 10 times
+        //if you know the number of times than for loop is the best choice
+        for(int i=1;i<=5;i++){
+            System.out.println("hello world");
+        }
+
+        //Step 1: int i=1 ; intilaization will happen only once
+        //Step 2 i<=5 1<=5 true
+        //Step 3 it will enters the loops and print the logic what you implemented   System.out.println("hello world");
+        //Step 4: i++ ---->i=1+1 ----> 2
+        //Step 5: 2<=5 ----->condition ture
+        //Step 6 it will enters the loops and print the logic what you implemented   System.out.println("hello world");
+        //Step 7: i++ ---->i=2+1 ----> 3
+        //Step 8: 3<=5 ----->condition ture
+        //Step 9: it will enters the loops and print the logic what you implemented   System.out.println("hello world");
+        //Step 10: i++ ---->i=3+1 ----> 4
+        //Step 11: 4<=5 ----->condition ture
+        //Step 12: it will enters the loops and print the logic what you implemented   System.out.println("hello world");
+    }
+}
+
+
+
+===============================================================================================
+public static void main(String[] args) {
+       //print 1 to 10 numbers
+        for(int i=1;i<=10;i++){
+            System.out.println(i);
+        }
+
+
+    }
+}
+
+public static void main(String[] args) {
+       //print 10 to 1 numbers
+        for(int i=10;i>=1;i--){
+            System.out.println(i);
+        }
+
+
+    }
+}
+
+ public static void main(String[] args) {
+       //print 10 to 1 numbers
+        for(int i=10;i>=1;i--){
+            if((i!=7)&(i!=8))
+            System.out.println(i);
+        }
+
+
+    }
+}
+
+================================================================================
+
+While Loop
+
+Syntax
+
+while(condition){
+code that we want to repeat
+}
+
+Syntax for the Do while Loop
+
+do{
+//code that we want to repeat
+}
+while(condition);
+==================================================================
+How do we know which loop we should user:
+
+when you know exactly how many times you want to loop through block of  code ,use  the for loop  instead of while loop
+
+when we don't know how how many times we need to repeat block of code we should be going  with while loop most of the times it happens
+when user input is involved
+public class LoopStatements {
+
+
+        public static void main(String[] args) {
+            //write the code to print all the numbers from starting point to ending point
+            //asking the user what is starting point and ending point
+
+        int start =90;
+        int end=100;
+        int counter=start;
+        while(counter<=end){
+            System.out.println(counter);
+            counter++;
+        }
+        }
+}
+
+==================================================================================
+
+Scanner
+
+Scanner is class that contains  all the logic to take the input from the user and using the console and keyboard
+
+Why should be use the scanner class
+
+if we want to interactive programs which can take input from the users based on the input we need to write the logic
+
+What is the Syntax of scanner class
+
+Create  the object of the Scanner  class
+
+ClassName anyreferance  variable = new ClassName();
+Scanner input= new Scanner(System.in);
+
+import java.util.Scanner;
+
+public class ScannerConcept {
+
+    public static void main(String[] args) {
+        //ScannerConcept scan= new ScannerConcept();
+        //Scanner  ------> predifned class
+        //input ----> is a variables of type you can give any meaningful name
+        //new  ------> java keyword
+        //System.in---> means we want to use the scanner class for taking the user input
+        Scanner input= new Scanner(System.in);
+        System.out.println("please enter your name: ");
+        //calling the next method to take the string from the user
+          String name=    input.next();
+        System.out.println("you are amazing " +name);
+
+
+
+    }
+}
+
+==================================================
+
+public class ScannerConcept {
+
+    public static void main(String[] args) {
+
+        Scanner input= new Scanner(System.in);
+        System.out.println("please enter your name: ");
+            //for int type of data we should be using the nextInt() method
+          int salary=   input.nextInt();
+
+          if(salary>100000){
+              System.out.println(" you are rich");
+          }
+          else{
+              System.out.println("looking for better opportunties");
+          }
+
+
+
+
+    }
+}
+=================================================================
+package Class002;
+
+import java.util.Scanner;
+
+public class ScannerConcept {
+
+    public static void main(String[] args) {
+//java program execution will starts from the main method
+        Scanner input= new Scanner(System.in);
+        System.out.println("please enter gender of the person: ");
+       //there is no direct method for the char data type in scanner class
+        char gender= input.next().charAt(0);
+        System.out.println("gender of the person: "+gender);
+    }
+}
+
+
+package Class002;
+
+import java.util.Scanner;
+
+public class ScannerConcept {
+
+    public static void main(String[] args) {
+//java program execution will starts from the main method
+        Scanner input= new Scanner(System.in);
+        System.out.println("please enter full name of the person ");
+       //if we wants to take complete line from the user we  should use the nextLine method
+        String name=    input.nextLine();
+        System.out.println(name);
+    }
+}
+package Class002;
+
+        import java.util.Scanner;
+
+public class LoopStatements {
+
+
+    public static void main(String[] args) {
+
+        Scanner scan= new Scanner(System.in);
+        System.out.println("please enter the starting point and ending point");
+        int start =scan.nextInt();
+        int end=scan.nextInt();
+        int counter=start;
+        while(counter<=end){
+            System.out.println(counter);
+            counter++;
+        }
+    }
+}
+
+package Class002;
+
+import java.util.Scanner;
+
+public class LoopStatements {
+
+
+        public static void main(String[] args) {
+          int i=100;
+          do{
+              System.out.println(i);
+              i++;
+          }
+            while(i<=10);
+
+        }
+}

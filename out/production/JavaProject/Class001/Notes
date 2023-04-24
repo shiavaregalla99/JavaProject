@@ -1,0 +1,176 @@
+package Class001;
+//Class001 -----> user defined package
+//package ----> java Keyword
+public class SampleProgram {
+    //SampleProgram -----> User defined Class
+    //public -----> java Keyword
+    //class ------> java Keyword
+    //java program execution will starts from the main method
+
+    public static void main(String[] args){
+
+        System.out.println("hi java how are you");
+        System.out.println("hi java how are you");
+        //System ----> Predefined class
+        //out ------> is the referance of the class
+        //println -----> java method  -----> to print the line in the new line
+    }
+
+
+}
+========================================================================
+
+package Class001;
+
+public class SampleProgram {
+
+
+    public static void main(String[] args){
+ ///print ----> will print the output in the single line
+        System.out.print("hi java how are you");
+        System.out.print("hi java how are you");
+
+    }
+
+
+}
+==================================================================================
+
+
+Two types of comments in java
+
+Single line comment
+
+Multi line comments
+package Class001;
+//Class001 -----> user defined package
+//package ----> java Keyword
+public class SampleProgram {
+  /*  SampleProgram -----> User defined Class
+    public -----> java Keyword
+    class ------> java Keyword
+    java program execution will starts from the main method
+
+    this program deals with print the statement in new line
+    */
+    //press the ctrl+shift+ / to provide the multi line comments
+
+    public static void main(String[] args){
+
+        System.out.println("hi java how are you");
+        System.out.println("hi java how are you");
+        //System ----> Predefined class
+        //out ------> is the referance of the class
+        //println -----> java method  -----> to print the line in the new line
+    }
+
+
+}
+
+=============================================================================================================
+
+Data types
+
+package Class001;
+
+public class DataTypes {
+    public static void main(String[] args) {
+     //  int a=100;
+       //int -----> data type
+        //data type----> data types specify the different size and values that can be stored in the variables
+        //a ----> variables name (you can provide any meaning ful name)
+        // = ----> assigment operator
+        //100 integer value
+        //; -----> termination statement
+        //i am storing the 100 values in the a
+        //to store the integer values in java
+        //byte
+        //short
+        //int
+        //long
+        byte bb=127;
+        //byte can store the values from -128 to 127
+        short ss=5654;
+        //16 bit
+        //range of values -32768 to -32767
+//        // 2n-1
+//        -2n-1 to 2n-1
+//         -2power15 to 2power 15
+    }
+}
+
+==================================================================
+If you want to store the floating or Decimal values
+
+package Class001;
+
+public class DataTypes {
+    public static void main(String[] args) {
+      double dd=7878.093456; //64 bit
+      float ff=989898.09345f; ///32 bit
+        System.out.println("double value" +dd);
+        System.out.println("float value"+ff);
+    }
+}
+==========================================================================
+ackage Class001;
+
+public class DataTypes {
+    public static void main(String[] args) {
+    float x=1.0f;
+    float y=3.0f;
+    float z=x/y;
+        System.out.println(z);
+    }
+}
+
+output: 0.33333334
+
+package Class001;
+
+public class DataTypes {
+    public static void main(String[] args) {
+    double x=1.0;
+    double y=3.0;
+    double z=x/y;
+        System.out.println(z);
+    }
+}
+//output: 0.3333333333333333
+
+=====================================================
+package Class001;
+
+public class DataTypes {
+    public static void main(String[] args) {
+      char ch='2';
+      //if you want to store the single character value such as numbers,alpahabets specical characters
+        char ch1='%';
+    }
+}
+package Class001;
+
+public class DataTypes {
+    public static void main(String[] args) {
+     //to store the true and false values
+        //we are going to use the boolean
+        boolean value=true;
+        boolean value2=false;
+
+    }
+}
+
+
+we discussed till now 8 data types
+
+this 8 data types are primitive data types
+
+byte
+short
+int
+long
+double
+float
+char
+boolean
+==================================================================================================
