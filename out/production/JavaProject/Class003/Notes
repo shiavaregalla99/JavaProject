@@ -194,14 +194,3 @@ public class ConditionalStatements {
 
     }
 }
-
-
-type casting
-convert one data type to the another data type 
-public static void main(String[] args) {
-      double num=10.000989878786;
-        System.out.println(num);
-      int value=(int)num;
-        System.out.println(value);
-    }
-}
